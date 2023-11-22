@@ -1,75 +1,64 @@
 <template>
-  <div>
-    <!-- <h1>API</h1>
-    <div ref="el"></div>
-    <button id="count" @click="count++">{{ count }}</button> -->
-
-    <div id="section06">
-      <div id="carousel" class="carousel">
-        <div id="item_1" class=" hideLeft">
-            <div class="postscript woman">
-              <p>그림책을 너무 좋아해서 시작했는데 요즘은 이것저것 읽고 게임으로 확인받는걸 너무 좋아해요 어휘력이 많이 늘었다는게 느껴지네요^^</p>
-              <p class="user-info">초등학교 1학년 <span>정ㅇㅇ</span> 학부모님</p>
-            </div>
-        </div>
-
-        <div id="item_2" class="prevLeftSecond">
+  <div id="section06">
+    <div id="carousel" class="carousel">
+      <div id="item_1" class=" hideLeft">
           <div class="postscript woman">
-            <p>아이가 먼저 책도 읽고 문제풀이도 하고 있네요. 점점 습관이 되나 봐요~</p>
-            <p class="user-info">초등학교 1학년 <span>이ㅇㅇ</span> 학부모님</p>
+            <p>그림책을 너무 좋아해서 시작했는데 요즘은 이것저것 읽고 게임으로 확인받는걸 너무 좋아해요 어휘력이 많이 늘었다는게 느껴지네요^^</p>
+            <p class="user-info">초등학교 1학년 <span>정ㅇㅇ</span> 학부모님</p>
           </div>
-        </div>
+      </div>
 
-        <div id="item_3" class="prev">
-          <div class="postscript">
-            <p>독서 습관이 생기니까 이젠 알아서 다른 도서들도 읽기 시작했어요~</p>
-            <p class="user-info">초등학교 2학년 <span>윤ㅇㅇ</span> 학부모님</p>
-          </div>
-        </div>
-
-        <div id="item_4" class="selected">
-          <div class="postscript">
-            <p>칭찬 스티커가 늘어가니까 아이가 더 재밌어하는 게 보여요~ 요즘은 먼저 책 읽자는 말을 하네요</p>
-            <p class="user-info">6살 <span>박ㅇㅇ</span> 학부모님</p>
-          </div>
-        </div>
-
-        <div id="item_5" class="next">
-          <div class="postscript woman">
-            <p>책 고르는 게 제일 고민이었는데 커리큘럼이 좋아 보여 시키고 있어요. 일단, 아이가 너무 좋아하네요.</p>
-            <p class="user-info">초등학교 3학년 <span>김ㅇㅇ</span> 학부모님</p>
-          </div>
-        </div>
-
-        <div id="item_6" class="nextRightSecond">
-          <div class="postscript">
-            <p>읽는 것뿐만 아니라 말하고, 쓰는 학습이 있어서 도움이 많이 되는 것 같아요.</p>
-            <p class="user-info">7살 <span>최ㅇㅇ</span> 학부모님</p>
-          </div>
+      <div id="item_2" class="prevLeftSecond">
+        <div class="postscript woman">
+          <p>아이가 먼저 책도 읽고 문제풀이도 하고 있네요. 점점 습관이 되나 봐요~</p>
+          <p class="user-info">초등학교 1학년 <span>이ㅇㅇ</span> 학부모님</p>
         </div>
       </div>
 
-      <div class="carousel-buttons">
-        <button class="carousel-buttons-prev" role="button" id="prev">
-          <span class="hide">이전</span>
-        </button>
-        <button class="carousel-buttons-next" role="button" id="next">
-          <span class="hide">다음</span>
-        </button>
+      <div id="item_3" class="prev">
+        <div class="postscript">
+          <p>독서 습관이 생기니까 이젠 알아서 다른 도서들도 읽기 시작했어요~</p>
+          <p class="user-info">초등학교 2학년 <span>윤ㅇㅇ</span> 학부모님</p>
+        </div>
+      </div>
+
+      <div id="item_4" class="selected">
+        <div class="postscript">
+          <p>칭찬 스티커가 늘어가니까 아이가 더 재밌어하는 게 보여요~ 요즘은 먼저 책 읽자는 말을 하네요</p>
+          <p class="user-info">6살 <span>박ㅇㅇ</span> 학부모님</p>
+        </div>
+      </div>
+
+      <div id="item_5" class="next">
+        <div class="postscript woman">
+          <p>책 고르는 게 제일 고민이었는데 커리큘럼이 좋아 보여 시키고 있어요. 일단, 아이가 너무 좋아하네요.</p>
+          <p class="user-info">초등학교 3학년 <span>김ㅇㅇ</span> 학부모님</p>
+        </div>
+      </div>
+
+      <div id="item_6" class="nextRightSecond">
+        <div class="postscript">
+          <p>읽는 것뿐만 아니라 말하고, 쓰는 학습이 있어서 도움이 많이 되는 것 같아요.</p>
+          <p class="user-info">7살 <span>최ㅇㅇ</span> 학부모님</p>
+        </div>
       </div>
     </div>
 
+    <div class="carousel-buttons">
+      <button class="carousel-buttons-prev" role="button" id="prev">
+        <span class="hide">이전</span>
+      </button>
+      <button class="carousel-buttons-next" role="button" id="next">
+        <span class="hide">다음</span>
+      </button>
+    </div>
   </div>  
 </template>
 
 <script setup>
-  // import { useMouse } from '@/composables/CarouselSlider.js'
-
   import { 
     ref, 
-    onMounted,
-    onUpdated,
-    onUnmounted 
+    onMounted
   } from 'vue'
 
   const el = ref()
@@ -77,19 +66,7 @@
     console.log(el.value) // <div></div>
   })
 
-
-  // const count = ref(0)
-  // onUpdated(() => {
-  //   console.log(document.getElementById('count').textContent)
-  // })
-
-
-  // let intervalId
-  
   onMounted(() => {
-    // intervalId = setInterval(() => {
-    //   // ...
-    // })
 
     if (!window.CarouselSlider) window.CarouselSlider = {}; // window 객체에 CarouselSlider 객체 선언
     const _$ = str => document.querySelector(str); // _$(element) 
@@ -289,6 +266,4 @@
 
     CarouselSlider.init("carousel");
   })
-
-  onUnmounted(() => clearInterval(intervalId))
 </script>
