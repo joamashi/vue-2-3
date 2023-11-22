@@ -1,3 +1,8 @@
+// https://www.google.com/search?q=Carousel+Slider&sca_esv=584463452&tbm=isch&sxsrf=AM9HkKn0fpnC0O_n5gnhnE9kL7Zt-AIhFA:1700616634578&source=lnms&sa=X&ved=2ahUKEwictJzTutaCAxVDkVYBHS-IC0IQ_AUoAXoECAEQAw&biw=1920&bih=931&dpr=1
+// https://www.google.com/search?q=Carousel+Slider&tbm=isch&ictx=1&tbs=rimg:CbWFBqv-BWMgIgi1hQar_1gVjICoSCbWFBqv-BWMgERyIYt4feySf
+// https://bytewebster.com/javascriptprojects/responsive-carousel-using-html-css-flexbox-and-swiperjs
+// https://swiperjs.com/plugins
+
 const $ = str => document.querySelector(str);
 
 (function() {
