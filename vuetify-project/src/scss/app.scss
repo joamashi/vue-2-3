@@ -1,0 +1,218 @@
+
+body,
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+html {
+  font-family: 'KBF', sans-serif;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1;
+  color: #000;
+  letter-spacing: -0.6000000238418579px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+  td,
+  th {
+    padding: 0;
+  }
+}
+
+em,
+address,
+i {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, 
+a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; 
+  overflow: hidden;
+  color: transparent;
+}
+
+// vuetify - v-btn
+button.v-btn,
+a.v-btn {
+  background-color: transparent;
+  &.v-btn--variant-elevated,
+  &.v-btn--variant-elevated:hover {
+    box-shadow: none !important;
+  }
+
+  &:hover > .v-btn__overlay {
+    opacity: 0 !important;
+  }
+
+  &.v-btn--size-default {
+    padding: 0;
+    font-size: 1.4rem;
+    letter-spacing: -0.6px;
+    min-width: initial;
+    border-radius: initial;
+    --v-btn-height: 0;
+  }
+
+  .v-ripple__container {
+    display: none !important;
+  }
+}
+
+// vuetify - v-tabs
+.v-tabs {
+  .v-slide-group__container {
+    .v-slide-group__content {
+      .v-btn {
+        .v-btn__content {
+          .v-tab__slider {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// vuetify - v-window
+.v-window {
+  .v-window__container {
+    .v-window-item {
+      transform: translateX(0) !important;
+      transition: none !important;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+// vuetify - messages
+.v-input__details {
+  padding-top: 0;
+  min-height: initial;
+  .v-messages {
+    min-height: initial;
+  }
+}
+
+// vuetify - error messages
+.v-input.v-input--error {
+  .v-input__control {
+    .v-field {
+      .v-field__overlay {
+        border-color: #F34848 !important;
+      }
+    }
+  }
+  .v-input__details {
+    padding-inline-start: 0;
+    margin-bottom: .4rem;
+    .v-messages {
+      padding-top: .8rem;
+      height: 2rem;
+      .v-messages__message {
+        font-size: 1.2rem;
+        color: #F34848;
+        position: fixed;
+      }
+    }
+  }
+}
+
+// vuetify - v-label
+.v-label {
+  opacity: 1;
+  font-size: 1.4rem;
+  height: initial;
+}
+
+// vuetify - text-field
+.v-text-field {
+  flex: none;
+  .v-input__control {
+    .v-field  {
+      .v-field__overlay {
+        background-color: #fff !important;
+        border: 1px #D7D7D7 solid !important;
+        opacity: 1;
+        border-radius: 1.2rem;
+      }
+      .v-field__loader {
+        display: none;
+      }
+
+      .v-field__field {
+        .v-label {
+        }
+        input {
+          &::placeholder {
+            font-size: 1.6rem;
+            font-weight: 300;
+          }  
+        }
+      }
+    }
+
+    .v-field__outline {
+      display: none;
+    }
+  }
+}
+
+body {
+  padding:10rem;
+
+  h1 {
+    font-size: 10rem;
+  }
+}
