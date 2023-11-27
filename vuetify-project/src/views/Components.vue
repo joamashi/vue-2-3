@@ -63,8 +63,7 @@
   const obj2 = reactive ({ age: 24 }) // 참조 타입, 반응형 데이터 O
 
   const age2Event = () => {
-    // age2.value++
-    name.value = 'Age'
+    age2.value++
   }
 
   // const a = 0
