@@ -46,10 +46,10 @@
   const obj02 = reactive(props.obj02) // 데이터 가공하기 위한 ref 선언!!!
   
   const increment = () => {
-    emit('increment11', age02.value++)
+    emit('increment', ++age02.value)
   }
 
   const decrement = () => {
-    emit('decrement', age02.value--)
+    emit('decrement', --age02.value)
   }
 </script>       

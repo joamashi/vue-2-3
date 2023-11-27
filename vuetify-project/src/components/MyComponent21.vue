@@ -1,10 +1,6 @@
 <template>
   <div class="MyComponent21">
     <h1>{{ name }}</h1>
-
-    <div>
-      <slot></slot>
-    </div>
     
     <h2>age1(반응형X) :  {{ age1 }}</h2>
     <h2>age2 :  {{ age2 }}</h2>
@@ -28,7 +24,9 @@
     <v-btn @click="emit('decrement_obj2', obj2.age--)">obj4 감소 emit</v-btn>
 
 
-    
+    <div>
+      <slot></slot>
+    </div>
 
     <div>
       <slot name="header"></slot>
