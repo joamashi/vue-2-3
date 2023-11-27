@@ -16,6 +16,12 @@ const routes = [
         name: 'Api',
         component: () => import('@/views/Api.vue'),
       },
+      
+      {
+        path: '/components',
+        name: 'Api',
+        component: () => import('@/views/Components.vue'),
+      },
     ],
   },
 ]
