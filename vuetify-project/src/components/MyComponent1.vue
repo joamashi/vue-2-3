@@ -2,24 +2,23 @@
   <div class="MyComponent1">
     <h1>MyComponent1</h1>
 
+    <h2>age1(반응형X) :  {{ dataAge1 }}</h2>
+    <h2>age2 :  {{ age2 }}</h2>
 
-    <h2>age1(반응형X) :  {{ age01 }}</h2>
-    <h2>age2 :  {{ age02 }}</h2>
+    <h2>obj1(반응형X) :  {{ dataObj1 }}</h2>
+    <h2 class="active">obj2 :  {{ obj2 }}</h2>
 
-    <h2>obj1(반응형X) :  {{ obj01 }}</h2>
-    <h2 class="active">obj2 :  {{ obj02 }}</h2>
-
-    <v-btn @click="age02++">age02 증가</v-btn>
-    <v-btn @click="age02--">age02 감소</v-btn>
+    <v-btn @click="age2++">age2 증가</v-btn>
+    <v-btn @click="age2--">age2 감소</v-btn>
 
     <!-- <v-btn @click="increment">증가 emit</v-btn>
     <v-btn @click="decrement">감소 emit</v-btn> -->
 
-    <v-btn @click="increment">age02 증가 emit</v-btn>
-    <v-btn @click="decrement">age02 감소 emit</v-btn>
+    <v-btn @click="increment">age2 증가 emit</v-btn>
+    <v-btn @click="decrement">age2 감소 emit</v-btn>
 
-    <v-btn @click="emit('increment_obj2', obj02.age++)">obj2 증가 emit</v-btn>
-    <v-btn @click="emit('decrement_obj2', obj02.age--)">obj2 감소 emit</v-btn>
+    <v-btn @click="emit('increment_obj2', obj2.age++)">obj2 증가 emit</v-btn>
+    <v-btn @click="emit('decrement_obj2', obj2.age--)">obj2 감소 emit</v-btn>
   </div>
 </template>
 
@@ -28,28 +27,27 @@
 
   // emit 선언
   const emit = defineEmits([
-    'increment11', 
+    'increment', 
     'decrement', 
     'increment_obj2', 
     'decrement_obj2'
   ])
 
   const props = defineProps({
-    age01: Number,
-    age02: Number,
-    obj01: Object,
-    obj02: Object, 
-    name: String,
+    dataAge1: Number,
+    dataAge2: Number,
+    dataObj1: Object,
+    dataObj2: Object, 
   })
 
-  const age02 = ref(props.age02) // 데이터 가공하기 위한 ref 선언!!!
-  const obj02 = reactive(props.obj02) // 데이터 가공하기 위한 ref 선언!!!
+  const age2 = ref(props.dataAge2) // 데이터 가공하기 위한 ref 선언!!!
+  const obj2 = reactive(props.dataObj2) // 데이터 가공하기 위한 ref 선언!!!
   
   const increment = () => {
-    emit('increment', ++age02.value)
+    emit('increment', ++age2.value)
   }
 
   const decrement = () => {
-    emit('decrement', --age02.value)
+    emit('decrement', --age2.value)
   }
 </script>       

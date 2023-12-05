@@ -23,17 +23,19 @@
     ">obj2 증가 emit</v-btn>
     <v-btn @click="emit('decrement_obj2', obj2.age--)">obj4 감소 emit</v-btn>
 
-
     <div>
-      <slot></slot>
+      <slot />
     </div>
 
     <div>
-      <slot name="header"></slot>
+      <slot name="header" />
     </div>
     
     <div>
-      <slot name="footer" :data-age="age2" :data-obj="obj2" :data-name="name"></slot>
+      <slot name="footer" 
+        :data-age="age2" 
+        :data-obj="obj2" 
+        :data-name="name" />
     </div>
   </div>  
 </template>

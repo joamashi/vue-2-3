@@ -51,8 +51,7 @@
         header
       </template>
 
-
-      <template     v-slot:footer="data">
+      <template v-slot:footer="data">
         footer {{ data }}
         <h1>{{ data.dataName }}</h1>
       </template>

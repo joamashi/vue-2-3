@@ -19,8 +19,26 @@ const routes = [
       
       {
         path: '/components',
-        name: 'Api',
+        name: '',
         component: () => import('@/views/Components.vue'),
+      },
+
+      {
+        path: '/ScrollBehavior',
+        name: '',
+        component: () => import('@/views/ScrollBehavior.vue'),
+      },
+
+      {
+        path: '/About',
+        name: '',
+        component: () => import('@/views/About.vue'),
+      },
+
+      {
+        path: '/Page',
+        name: '',
+        component: () => import('@/views/Page.vue'),
       },
     ],
   },
